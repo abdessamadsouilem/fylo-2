@@ -30,10 +30,13 @@ body{
     color: black;
 }
 .header__home{
+    direction: rtl;
     display: flex;
     font-family: 'Raleway', sans-serif;
 }
+
 .home__newsletter{
+    direction: ltr;
     width: 720px;
     display: flex;
     flex-direction: column;
@@ -75,15 +78,26 @@ body{
 }
 .guide__guide{
     /* (60% from 1440px) */
-    width: 864px;
+    width: 1276px;
+    direction: rtl;
+    display: flex;
+    
 }
 .guide__img{
     /* (40% from 1440px) */
     width: 576px;
 }
+.guide__text{
+    width: 700px;
+    direction: ltr;
+}
 .guide__text h1{
     font-family: 'Raleway', sans-serif ;
     font-size: 37px;
+    
+}
+.abdi{
+    display: block;
 }
 .guide__quote{
     /* (40% from 864px) */
@@ -91,8 +105,8 @@ body{
     background-color: white;
     box-shadow: 0px 0px 20px -6px hsl(238, 22%, 44%);
     padding: 40px;
-
-    
+    direction: ltr;
+    float: left;
 }
 .kyle{
     display: flex;
@@ -148,7 +162,7 @@ hr{
     width: 360px;
 }
 .fylo-logo img{
-    filter: brightness(100);
+     filter: brightness(100); 
     margin-bottom: 30px;
    
 }
@@ -227,3 +241,136 @@ hr{
   .contact-us { grid-area: contact-us; }
   .fc-logo { grid-area: fc-logo; }
 
+@media (max-width:700px){
+    .header__home{
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__newsletter {
+         width: 1276px;/*(1440-(82*2)) */
+        direction: ltr;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .home__img{
+        text-align: center;
+    }
+    .email {
+        width: 407px;
+        padding: 17px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        margin-right: 0 !important;
+    }
+    .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .form_btn{
+    width: 444px;
+    display: block;
+    text-align: center;
+    align-self: center;
+
+    }
+    .guide__guide{
+        /* (60% from 1440px) */
+        width: 1276px;
+        direction: rtl;
+        display: block;
+        align-items: center;
+    }
+    .guide__img{
+        width: 1276px;
+        text-align: center;
+    }
+    .abdi{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .guide__text {
+        width: 1276px;
+        direction: ltr;
+    }
+    .guide__quote{
+        margin-left: auto;
+        margin-right: auto;
+     }
+     hr{
+        width:162px;
+        border: 0.2px solid hsl(170, 45%, 43%);
+        background-color:hsl(170, 45%, 43%);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .guide__quote img{
+        float: left;
+     }
+    .guide__quote p{
+         text-align: start;
+    } 
+    .signup {
+        display: block;
+        background-color: hsl(238, 22%, 44%);
+        color: white;
+        text-align: center;
+    }
+    .signup__text{
+        margin-bottom: 12px;
+    }
+    .btn1 {
+        width: 486px;
+        display: block;
+        text-align: center;
+        align-self: center;
+    }
+    .footer{
+        background-color: hsl(243, 87%, 12%);
+        height: auto;
+        padding: 82px;
+        color: white;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 30px;
+    }
+    .about-us {
+        width: 360px;
+        display: flex;
+        justify-content: start;
+        align-self: center;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    .contact-us{
+        width: 360px;
+        display: flex;
+        justify-content: start;
+        align-self: center;
+        line-height: 45px;
+    }
+    .fylo-logo{
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "fylo-logo"
+          "about-us"
+          "contact-us"
+          "fc-logo";
+      }
+      .fylo-logo { grid-area: fylo-logo; }
+      .about-us { grid-area: about-us; }
+      .contact-us { grid-area: contact-us; }
+      .fc-logo { grid-area: fc-logo; }
+}
