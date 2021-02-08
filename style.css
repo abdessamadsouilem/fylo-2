@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1440px;
+    height: auto;
+}
+.header{
+    padding:82px ;
+}
+.header__navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5rem;
+}
+.header__navbar__items{
+    text-decoration: none;
+}
+.likn{
+    text-decoration: none;
+    margin-right: 56px;
+    color: black;
+}
+.likn1{
+    text-decoration: none;
+    color: black;
+}
+.header__home{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+.home__newsletter{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.home__newsletter h1{
+    color: hsl(243, 87%, 12%);
+    font-size: 37px;
+}
+.home__newsletter p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+.email{
+    width: 247px;
+    padding: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right:15px;
+}
+.form_btn{
+    padding: 18px 84px;
+    background-color:hsl(224, 93%, 58%) ; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.guide{
+    width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+}
+.guide img{
+    margin-bottom: -6px;
+}
+.middle{
+    background-color: hsl(240, 75%, 98%);
+    display: flex;
+    padding:82px ;
+}
+.guide__guide{
+    /* (60% from 1440px) */
+    width: 864px;
+}
+.guide__img{
+    /* (40% from 1440px) */
+    width: 576px;
+}
+.guide__text h1{
+    font-family: 'Raleway', sans-serif ;
+    font-size: 37px;
+}
+.guide__quote{
+    /* (40% from 864px) */
+    width: 345.5px;
+    background-color: white;
+    box-shadow: 0px 0px 20px -6px hsl(238, 22%, 44%);
+    padding: 40px;
+
+    
+}
+.kyle{
+    display: flex;
+}
+.kyle img{
+    width: 50px;
+    height: 50px;
+ border-radius: 50%;
+}
+.name{
+    margin-left: 5px;
+    font-size: 14px;
+    align-self:center;l
+}
+.name p{
+    font-size: 10px;
+    align-self:center;l
+}
+.works{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+hr{
+    width:162px;
+    border: 0.2px solid hsl(170, 45%, 43%);
+    background-color:hsl(170, 45%, 43%);
+    
+}
+.signup{
+    padding: 82px;
+    display: flex;
+    background-color:hsl(238, 22%, 44%) ;
+    color: white;
+}
+.signup__text{
+    width: 98%;
+    font-family: 'Open Sans', sans-serif;
+}
+.signup__text h1{
+    font-family: 'Raleway', sans-serif ;
+    font-size: 37px;
+}
+.signup__mail .email{
+    width: 449px;
+    padding: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 7px;
+
+}
+.fylo-logo{
+    /* (1440/4 = 360) */
+    width: 360px;
+}
+.fylo-logo img{
+    filter: brightness(100);
+    margin-bottom: 30px;
+   
+}
+.fone{
+    display: flex;
+}
+.fone img{
+    margin-right: 15px;
+}
+.gm{
+    display: flex; 
+}
+.gm img{
+    margin-right: 15px;
+}
+.about-us{
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    line-height: 45px;
+}
+.about-us ul{
+    list-style-type: none;
+}
+.contact-us{
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    line-height: 45px;
+}
+.contact-us ul{
+    list-style-type: none;
+}
+.lie{
+    text-decoration: none;
+    color: white;
+}
+.fc-logo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.cercle{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-right: 12px;
+    
+}
+.ic img{
+    padding-top: 5px;
+}
+.footer{
+    background-color: hsl(243, 87%, 12%);
+    height: 390px;
+    padding: 82px;
+    color: white;
+    font-family: 'Raleway', sans-serif ;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "fylo-logo about-us contact-us fc-logo fc-logo";
+  }
+  .fylo-logo { grid-area: fylo-logo; }
+  .about-us { grid-area: about-us; }
+  .contact-us { grid-area: contact-us; }
+  .fc-logo { grid-area: fc-logo; }
+
